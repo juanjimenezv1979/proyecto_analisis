@@ -22,7 +22,7 @@ st.header("Hacia una Antioquia conectada: Diagnóstico de la cobertura digital e
 
 # Procesamiento de datos
 def preprocess_data(df):
-    df['total_tecnologias'] = df[['3G', '4G', '5G']].sum(axis=1)  # Crear nueva métrica
+    df['total_tecnologias'] = df[['COBERTURA 3G', 'COBERTUTA 4G', 'COBERTURA 5G', 'COBERTURA LTE',  ]].sum(axis=1)  # Crear nueva métrica
     return df
 
 df = preprocess_data(df)
