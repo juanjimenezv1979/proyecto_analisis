@@ -11,7 +11,7 @@ from datetime import datetime
 @st.cache_data
 def load_data():
     query = """
-    SELECT * FROM 'cobertura_movil_definitivo.csv'
+    SELECT * FROM 'datos_antioquia_por_regiones.csv'
     """
     df = duckdb.query(query).to_df()
     return df
