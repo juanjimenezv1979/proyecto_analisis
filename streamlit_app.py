@@ -26,4 +26,4 @@ def preprocess_data(df):
     return df
 
 df = preprocess_data(df)
-print preprocess_data(df)
+
